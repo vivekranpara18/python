@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 from gtts import gTTS
@@ -41,3 +40,4 @@ try:
 
 except requests.exceptions.RequestException as e:
     print(f"Request failed: {e}")
+
