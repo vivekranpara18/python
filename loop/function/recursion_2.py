@@ -8,4 +8,5 @@ def tobinary(number):
         print(reminder,end=' ')
 
 number = int(input("enter number :"))
+
 tobinary(number)
