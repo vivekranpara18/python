@@ -6,6 +6,7 @@ balance = 125000
 daily_limit = 100000
 
 amount = int(input("enter transfaring amount :"))
+
 try:
     if amount>balance:
         raise transferlimitexception("insufficient balance")
@@ -15,7 +16,9 @@ try:
         balance = balance - amount
         print("transaction is succesfully")
         print('remaining balance in your account :',balance)
+
 except transferlimitexception as error:
     print(error)
+
 finally:
     print("thank you for banking with us")
